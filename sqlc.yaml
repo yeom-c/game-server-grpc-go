@@ -1,0 +1,42 @@
+version: 2
+sql:
+- schema: "./db/migration/static_data"
+  queries: "./db/query/static_data"
+  engine: "mysql"
+  gen:
+    go:
+      package: "db_static_data"
+      out: "./db/sqlc/static_data"
+      emit_json_tags: true
+      emit_empty_slices: true
+      emit_exact_table_names: true
+- schema: "./db/migration/common"
+  queries: "./db/query/common"
+  engine: "mysql"
+  gen:
+    go:
+      package: "db_common"
+      out: "./db/sqlc/common"
+      emit_json_tags: true
+      emit_empty_slices: true
+      emit_exact_table_names: true
+- schema: "./db/migration/game"
+  queries: "./db/query/game"
+  engine: "mysql"
+  gen:
+    go:
+      package: "db_game"
+      out: "./db/sqlc/game"
+      emit_json_tags: true
+      emit_empty_slices: true
+      emit_exact_table_names: true
+- schema: "./db/migration/battle"
+  queries: "./db/query/battle"
+  engine: "mysql"
+  gen:
+    go:
+      package: "db_battle"
+      out: "./db/sqlc/battle"
+      emit_json_tags: true
+      emit_empty_slices: true
+      emit_exact_table_names: true

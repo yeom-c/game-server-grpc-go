@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS `asset`;
+DROP TABLE IF EXISTS `character`;
+DROP TABLE IF EXISTS `character_broadcast`;
+DROP TABLE IF EXISTS `character_collection`;
+DROP TABLE IF EXISTS `costume`;
+DROP TABLE IF EXISTS `deck`;
+DROP TABLE IF EXISTS `fate_card`;
+DROP TABLE IF EXISTS `gacha_log`;
+DROP TABLE IF EXISTS `item`;
+DROP TABLE IF EXISTS `mail`;
+DROP TABLE IF EXISTS `user`;

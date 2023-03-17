@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS `battle_result`;
+DROP TABLE IF EXISTS `user`;

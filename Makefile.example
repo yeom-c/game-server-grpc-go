@@ -1,0 +1,54 @@
+SYNC_ENUM_URL=https://cdn.quasar-gamestudio.ga/enum/enum.go
+
+DB_COMMON_URL=mysql://user:password@tcp(localhost:3306)/common?parseTime=true
+DB_GAME_0_URL=mysql://user:password@tcp(localhost:3306)/game_0?parseTime=true
+DB_GAME_1_URL=mysql://user:password@tcp(localhost:3306)/game_1?parseTime=true
+DB_BATTLE_URL=mysql://user:password@tcp(localhost:3306)/battle?parseTime=true
+
+migrate.create:
+	@read -p "데이터베이스명, 마이그레이션명 입력(ex: common create_table): " db name; \
+		migrate create -ext sql -dir db/migration/$$db -seq $$name; \
+
+migrate.up.common:
+	@read -p "적용 단계 입력(미입력시 전체 적용): " step; \
+		migrate -source file:./db/migration/common -database "${DB_COMMON_URL}" up $$step; \
+
+migrate.down.common:
+	@read -p "롤백 단계 입력(미입력시 전체 롤백): " step; \
+		migrate -source file:./db/migration/common -database "${DB_COMMON_URL}" down $$step; \
+
+migrate.up.game:
+	@read -p "적용 단계 입력(미입력시 전체 적용): " step; \
+		migrate -source file:./db/migration/game -database "${DB_GAME_0_URL}" up $$step; \
+		migrate -source file:./db/migration/game -database "${DB_GAME_1_URL}" up $$step; \
+
+migrate.down.game:
+	@read -p "롤백 단계 입력(미입력시 전체 롤백): " step; \
+		migrate -source file:./db/migration/game -database "${DB_GAME_0_URL}" down $$step; \
+		migrate -source file:./db/migration/game -database "${DB_GAME_1_URL}" down $$step; \
+
+migrate.up.battle:
+	@read -p "적용 단계 입력(미입력시 전체 적용): " step; \
+		migrate -source file:./db/migration/battle -database "${DB_BATTLE_URL}" up $$step; \
+
+migrate.down.battle:
+	@read -p "롤백 단계 입력(미입력시 전체 롤백): " step; \
+		migrate -source file:./db/migration/battle -database "${DB_BATTLE_URL}" down $$step; \
+
+gen.sqlc:
+	rm -f ./db/sqlc/*/*.sql.go | rm -f ./db/sqlc/*/models.go | rm -f ./db/sqlc/*/db.go; \
+	sqlc generate
+
+sync.enum:
+	curl ${SYNC_ENUM_URL} --output enum/enum.go
+
+add.protobuf:
+	git submodule add -b main ssh://git@github.com:yeom-c/protobuf-grpc-go.git protobuf;
+	git submodule update --remote;
+
+reset.protobuf:
+	git submodule deinit -f protobuf;
+	rm -rf .git/modules/protobuf;
+	git rm -f protobuf;
+
+.PHONY: migrate.create migrate.up.common migrate.down.common migrate.up.game migrate.down.game migrate.up.battle migrate.down.battle gen.sqlc sync.enum add.protobuf reset.protobuf
