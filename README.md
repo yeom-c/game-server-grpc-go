@@ -1,7 +1,7 @@
 ## Game Server gRPC Go
 
 ### 소개
-> grpc golang 게임서버 저장소입니다.
+> grpc golang 게임서버 저장소
 - [Go gRPC](https://grpc.io/docs/languages/go/quickstart)
 - [Golang Migrate](https://github.com/golang-migrate/migrate)
 - [SQLC](https://github.com/kyleconroy/sqlc)
