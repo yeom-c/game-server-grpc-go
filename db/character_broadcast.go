@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	err_pb "github.com/yeom-c/protobuf-grpc-go/gen/golang/protos/error_res"
 
-	db_game "github.com/yeomc/game-server-grpc-go/db/sqlc/game"
-	"github.com/yeomc/game-server-grpc-go/enum"
-	"github.com/yeomc/game-server-grpc-go/helper"
+	db_game "github.com/yeom-c/game-server-grpc-go/db/sqlc/game"
+	"github.com/yeom-c/game-server-grpc-go/enum"
+	"github.com/yeom-c/game-server-grpc-go/helper"
 )
 
 type broadcastPool struct {

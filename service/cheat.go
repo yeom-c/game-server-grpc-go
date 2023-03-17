@@ -10,12 +10,12 @@ import (
 	model_pb "github.com/yeom-c/protobuf-grpc-go/gen/golang/protos/model"
 	"time"
 
-	"github.com/yeomc/game-server-grpc-go/db"
-	db_session "github.com/yeomc/game-server-grpc-go/db/redis/session"
-	db_game "github.com/yeomc/game-server-grpc-go/db/sqlc/game"
-	"github.com/yeomc/game-server-grpc-go/enum"
-	"github.com/yeomc/game-server-grpc-go/helper"
-	"github.com/yeomc/game-server-grpc-go/model"
+	"github.com/yeom-c/game-server-grpc-go/db"
+	db_session "github.com/yeom-c/game-server-grpc-go/db/redis/session"
+	db_game "github.com/yeom-c/game-server-grpc-go/db/sqlc/game"
+	"github.com/yeom-c/game-server-grpc-go/enum"
+	"github.com/yeom-c/game-server-grpc-go/helper"
+	"github.com/yeom-c/game-server-grpc-go/model"
 )
 
 type cheatService struct {

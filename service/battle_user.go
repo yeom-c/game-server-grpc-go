@@ -4,14 +4,14 @@ import (
 	"context"
 	model_pb "github.com/yeom-c/protobuf-grpc-go/gen/golang/protos/model"
 
-	db_battle "github.com/yeomc/game-server-grpc-go/db/sqlc/battle"
-	db_common "github.com/yeomc/game-server-grpc-go/db/sqlc/common"
-	"github.com/yeomc/game-server-grpc-go/helper"
+	db_battle "github.com/yeom-c/game-server-grpc-go/db/sqlc/battle"
+	db_common "github.com/yeom-c/game-server-grpc-go/db/sqlc/common"
+	"github.com/yeom-c/game-server-grpc-go/helper"
 
 	pb "github.com/yeom-c/protobuf-grpc-go/gen/golang/protos/battle_user"
 	err_pb "github.com/yeom-c/protobuf-grpc-go/gen/golang/protos/error_res"
 
-	"github.com/yeomc/game-server-grpc-go/db"
+	"github.com/yeom-c/game-server-grpc-go/db"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
 

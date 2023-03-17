@@ -20,7 +20,7 @@ import (
 	story_pb "github.com/yeom-c/protobuf-grpc-go/gen/golang/protos/story"
 	user_pb "github.com/yeom-c/protobuf-grpc-go/gen/golang/protos/user"
 
-	"github.com/yeomc/game-server-grpc-go/config"
+	"github.com/yeom-c/game-server-grpc-go/config"
 	"google.golang.org/grpc"
 )
 

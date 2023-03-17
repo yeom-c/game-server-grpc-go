@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/yeomc/game-server-grpc-go/helper"
+	"github.com/yeom-c/game-server-grpc-go/helper"
 )
 
 const getCostumeListByEnumId = `-- name: GetCostumeListByEnumId :many

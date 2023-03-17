@@ -16,7 +16,7 @@ import (
 
 	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
 	grpc_recovery "github.com/grpc-ecosystem/go-grpc-middleware/recovery"
-	"github.com/yeomc/game-server-grpc-go/config"
+	"github.com/yeom-c/game-server-grpc-go/config"
 	"google.golang.org/grpc"
 )
 

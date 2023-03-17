@@ -7,13 +7,13 @@ import (
 	model_pb "github.com/yeom-c/protobuf-grpc-go/gen/golang/protos/model"
 	"time"
 
-	"github.com/yeomc/game-server-grpc-go/enum"
-	"github.com/yeomc/game-server-grpc-go/helper"
-	"github.com/yeomc/game-server-grpc-go/model"
+	"github.com/yeom-c/game-server-grpc-go/enum"
+	"github.com/yeom-c/game-server-grpc-go/helper"
+	"github.com/yeom-c/game-server-grpc-go/model"
 
 	err_pb "github.com/yeom-c/protobuf-grpc-go/gen/golang/protos/error_res"
 
-	db_game "github.com/yeomc/game-server-grpc-go/db/sqlc/game"
+	db_game "github.com/yeom-c/game-server-grpc-go/db/sqlc/game"
 )
 
 func (s *store) TxConfirmMails(ctx context.Context, txGameQueries *db_game.Queries, gameDb, accountUserId int32, mailList []db_game.Mail) (newReward model_pb.Reward, err error) {

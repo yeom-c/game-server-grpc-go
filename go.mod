@@ -1,4 +1,4 @@
-module github.com/yeomc/game-server-grpc-go
+module github.com/yeom-c/game-server-grpc-go
 
 go 1.19
 

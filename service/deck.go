@@ -9,11 +9,11 @@ import (
 	"strings"
 
 	"github.com/go-sql-driver/mysql"
-	"github.com/yeomc/game-server-grpc-go/db"
-	db_session "github.com/yeomc/game-server-grpc-go/db/redis/session"
-	db_game "github.com/yeomc/game-server-grpc-go/db/sqlc/game"
-	"github.com/yeomc/game-server-grpc-go/enum"
-	"github.com/yeomc/game-server-grpc-go/helper"
+	"github.com/yeom-c/game-server-grpc-go/db"
+	db_session "github.com/yeom-c/game-server-grpc-go/db/redis/session"
+	db_game "github.com/yeom-c/game-server-grpc-go/db/sqlc/game"
+	"github.com/yeom-c/game-server-grpc-go/enum"
+	"github.com/yeom-c/game-server-grpc-go/helper"
 )
 
 type deckService struct {

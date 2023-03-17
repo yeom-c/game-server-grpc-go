@@ -7,13 +7,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/yeomc/game-server-grpc-go/helper"
+	"github.com/yeom-c/game-server-grpc-go/helper"
 
 	err_pb "github.com/yeom-c/protobuf-grpc-go/gen/golang/protos/error_res"
 	model_pb "github.com/yeom-c/protobuf-grpc-go/gen/golang/protos/model"
 
-	db_game "github.com/yeomc/game-server-grpc-go/db/sqlc/game"
-	"github.com/yeomc/game-server-grpc-go/enum"
+	db_game "github.com/yeom-c/game-server-grpc-go/db/sqlc/game"
+	"github.com/yeom-c/game-server-grpc-go/enum"
 )
 
 func (s *store) TxCreateUser(ctx context.Context, txGameQueries *db_game.Queries, gameDb, accountUserId int32) (userId int32, err error) {

@@ -5,13 +5,13 @@ import (
 	"database/sql"
 	model_pb "github.com/yeom-c/protobuf-grpc-go/gen/golang/protos/model"
 
-	"github.com/yeomc/game-server-grpc-go/helper"
+	"github.com/yeom-c/game-server-grpc-go/helper"
 
 	err_pb "github.com/yeom-c/protobuf-grpc-go/gen/golang/protos/error_res"
 	pb "github.com/yeom-c/protobuf-grpc-go/gen/golang/protos/user"
 
-	"github.com/yeomc/game-server-grpc-go/db"
-	db_session "github.com/yeomc/game-server-grpc-go/db/redis/session"
+	"github.com/yeom-c/game-server-grpc-go/db"
+	db_session "github.com/yeom-c/game-server-grpc-go/db/redis/session"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
 

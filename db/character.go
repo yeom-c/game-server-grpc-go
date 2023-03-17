@@ -4,9 +4,9 @@ import (
 	"context"
 	err_pb "github.com/yeom-c/protobuf-grpc-go/gen/golang/protos/error_res"
 
-	db_common "github.com/yeomc/game-server-grpc-go/db/sqlc/common"
-	db_game "github.com/yeomc/game-server-grpc-go/db/sqlc/game"
-	"github.com/yeomc/game-server-grpc-go/helper"
+	db_common "github.com/yeom-c/game-server-grpc-go/db/sqlc/common"
+	db_game "github.com/yeom-c/game-server-grpc-go/db/sqlc/game"
+	"github.com/yeom-c/game-server-grpc-go/helper"
 )
 
 func (s *store) GetEachAccountUserCharacters(ctx context.Context, eachAccountUserCharactersId map[int32][]int32) (map[int32]db_common.AccountUser, map[int32]map[int32]db_game.Character, error) {

@@ -8,10 +8,10 @@ import (
 	"strconv"
 	"time"
 
-	db_battle "github.com/yeomc/game-server-grpc-go/db/sqlc/battle"
-	db_game "github.com/yeomc/game-server-grpc-go/db/sqlc/game"
-	"github.com/yeomc/game-server-grpc-go/enum"
-	"github.com/yeomc/game-server-grpc-go/helper"
+	db_battle "github.com/yeom-c/game-server-grpc-go/db/sqlc/battle"
+	db_game "github.com/yeom-c/game-server-grpc-go/db/sqlc/game"
+	"github.com/yeom-c/game-server-grpc-go/enum"
+	"github.com/yeom-c/game-server-grpc-go/helper"
 )
 
 func (s *store) TxConfirmBattleResults(ctx context.Context, txBattleQueries *db_battle.Queries, txGameQueries *db_game.Queries, gameDb, accountUserId int32, battleResultList []db_battle.BattleResult) (matchPoint, addPoint int32, newReward model_pb.Reward, err error) {

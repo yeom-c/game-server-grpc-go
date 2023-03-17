@@ -8,10 +8,10 @@ import (
 	pb "github.com/yeom-c/protobuf-grpc-go/gen/golang/protos/shop"
 	"time"
 
-	"github.com/yeomc/game-server-grpc-go/db"
-	db_session "github.com/yeomc/game-server-grpc-go/db/redis/session"
-	db_common "github.com/yeomc/game-server-grpc-go/db/sqlc/common"
-	"github.com/yeomc/game-server-grpc-go/helper"
+	"github.com/yeom-c/game-server-grpc-go/db"
+	db_session "github.com/yeom-c/game-server-grpc-go/db/redis/session"
+	db_common "github.com/yeom-c/game-server-grpc-go/db/sqlc/common"
+	"github.com/yeom-c/game-server-grpc-go/helper"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
 

@@ -6,10 +6,10 @@ import (
 	pb "github.com/yeom-c/protobuf-grpc-go/gen/golang/protos/gacha_log"
 	model_pb "github.com/yeom-c/protobuf-grpc-go/gen/golang/protos/model"
 
-	"github.com/yeomc/game-server-grpc-go/db"
-	db_session "github.com/yeomc/game-server-grpc-go/db/redis/session"
-	db_game "github.com/yeomc/game-server-grpc-go/db/sqlc/game"
-	"github.com/yeomc/game-server-grpc-go/helper"
+	"github.com/yeom-c/game-server-grpc-go/db"
+	db_session "github.com/yeom-c/game-server-grpc-go/db/redis/session"
+	db_game "github.com/yeom-c/game-server-grpc-go/db/sqlc/game"
+	"github.com/yeom-c/game-server-grpc-go/helper"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
 

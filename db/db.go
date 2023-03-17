@@ -6,15 +6,15 @@ import (
 	"sync"
 
 	"github.com/rs/zerolog/log"
-	redis_battle "github.com/yeomc/game-server-grpc-go/db/redis/battle"
-	db_battle "github.com/yeomc/game-server-grpc-go/db/sqlc/battle"
+	redis_battle "github.com/yeom-c/game-server-grpc-go/db/redis/battle"
+	db_battle "github.com/yeom-c/game-server-grpc-go/db/sqlc/battle"
 
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/yeomc/game-server-grpc-go/config"
-	redis_session "github.com/yeomc/game-server-grpc-go/db/redis/session"
-	db_common "github.com/yeomc/game-server-grpc-go/db/sqlc/common"
-	db_game "github.com/yeomc/game-server-grpc-go/db/sqlc/game"
-	db_static_data "github.com/yeomc/game-server-grpc-go/db/sqlc/static_data"
+	"github.com/yeom-c/game-server-grpc-go/config"
+	redis_session "github.com/yeom-c/game-server-grpc-go/db/redis/session"
+	db_common "github.com/yeom-c/game-server-grpc-go/db/sqlc/common"
+	db_game "github.com/yeom-c/game-server-grpc-go/db/sqlc/game"
+	db_static_data "github.com/yeom-c/game-server-grpc-go/db/sqlc/static_data"
 )
 
 var once sync.Once

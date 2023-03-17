@@ -8,9 +8,9 @@ import (
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 	"github.com/rs/zerolog/pkgerrors"
-	"github.com/yeomc/game-server-grpc-go/app"
-	"github.com/yeomc/game-server-grpc-go/config"
-	"github.com/yeomc/game-server-grpc-go/service"
+	"github.com/yeom-c/game-server-grpc-go/app"
+	"github.com/yeom-c/game-server-grpc-go/config"
+	"github.com/yeom-c/game-server-grpc-go/service"
 )
 
 func main() {

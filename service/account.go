@@ -6,15 +6,15 @@ import (
 	"time"
 
 	"github.com/go-sql-driver/mysql"
-	"github.com/yeomc/game-server-grpc-go/helper"
+	"github.com/yeom-c/game-server-grpc-go/helper"
 
 	pb "github.com/yeom-c/protobuf-grpc-go/gen/golang/protos/account"
 	err_pb "github.com/yeom-c/protobuf-grpc-go/gen/golang/protos/error_res"
 	model_pb "github.com/yeom-c/protobuf-grpc-go/gen/golang/protos/model"
 
-	"github.com/yeomc/game-server-grpc-go/db"
-	db_session "github.com/yeomc/game-server-grpc-go/db/redis/session"
-	db_common "github.com/yeomc/game-server-grpc-go/db/sqlc/common"
+	"github.com/yeom-c/game-server-grpc-go/db"
+	db_session "github.com/yeom-c/game-server-grpc-go/db/redis/session"
+	db_common "github.com/yeom-c/game-server-grpc-go/db/sqlc/common"
 )
 
 type accountService struct {

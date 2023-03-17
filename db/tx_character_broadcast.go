@@ -7,9 +7,9 @@ import (
 	model_pb "github.com/yeom-c/protobuf-grpc-go/gen/golang/protos/model"
 	"time"
 
-	db_game "github.com/yeomc/game-server-grpc-go/db/sqlc/game"
-	"github.com/yeomc/game-server-grpc-go/enum"
-	"github.com/yeomc/game-server-grpc-go/helper"
+	db_game "github.com/yeom-c/game-server-grpc-go/db/sqlc/game"
+	"github.com/yeom-c/game-server-grpc-go/enum"
+	"github.com/yeom-c/game-server-grpc-go/helper"
 )
 
 func (s *store) TxGetOnAirCharacterBroadcasts(ctx context.Context, txGameQueries *db_game.Queries, gameDb, accountUserId int32) (broadcasts []db_game.CharacterBroadcast, broadcastResetAt time.Time, err error) {

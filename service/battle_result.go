@@ -6,10 +6,10 @@ import (
 	pb "github.com/yeom-c/protobuf-grpc-go/gen/golang/protos/battle_result"
 	err_pb "github.com/yeom-c/protobuf-grpc-go/gen/golang/protos/error_res"
 
-	"github.com/yeomc/game-server-grpc-go/db"
-	db_session "github.com/yeomc/game-server-grpc-go/db/redis/session"
-	db_battle "github.com/yeomc/game-server-grpc-go/db/sqlc/battle"
-	"github.com/yeomc/game-server-grpc-go/helper"
+	"github.com/yeom-c/game-server-grpc-go/db"
+	db_session "github.com/yeom-c/game-server-grpc-go/db/redis/session"
+	db_battle "github.com/yeom-c/game-server-grpc-go/db/sqlc/battle"
+	"github.com/yeom-c/game-server-grpc-go/helper"
 )
 
 type battleResultService struct {
