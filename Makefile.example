@@ -43,7 +43,7 @@ sync.enum:
 	curl ${SYNC_ENUM_URL} --output enum/enum.go
 
 add.protobuf:
-	git submodule add -b main ssh://git@github.com:yeom-c/protobuf-grpc-go.git protobuf;
+	git submodule add git@github.com:yeom-c/protobuf-grpc-go.git protobuf/;
 	git submodule update --remote;
 
 reset.protobuf:
